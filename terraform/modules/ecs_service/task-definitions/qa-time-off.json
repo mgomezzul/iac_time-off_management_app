@@ -1,0 +1,27 @@
+[
+    {
+      "name": "time-off",
+      "image": "982337557829.dkr.ecr.us-east-1.amazonaws.com/gorillalogic-qa-ecr-time-off-mgmt:latest",
+      "memoryReservation": 256,
+      "cpu": 256,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 0,
+          "protocol": "tcp"
+        }
+      ],
+      "linuxParameters": {
+        "initProcessEnabled": true
+      },
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "secretOptions": [],
+        "options": {
+        "awslogs-group": "/qa/ecs_service/time-off",
+        "awslogs-region": "us-east-1",
+        "awslogs-stream-prefix": "/qa/time-off"
+        }
+      }
+    }
+  ]
