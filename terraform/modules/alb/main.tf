@@ -13,6 +13,7 @@ resource "aws_lb" "default" {
   internal           = var.internal
   load_balancer_type = var.load_balancer_type
   security_groups    = local.security_groups
+  subnets            = local.subnets
   # access_logs {
   #   bucket  = module.s3_bucket_logs.id
   #   prefix  = var.alb_name
