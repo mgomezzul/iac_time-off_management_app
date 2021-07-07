@@ -10,6 +10,8 @@ terraform {
 inputs = {
   name = "ecr-time-off-mgmt"
 
+  image_tag_mutability = "MUTABLE"
+
   encryption_configuration = {
     encryption_type = "AES256"
     kms_key         = null
