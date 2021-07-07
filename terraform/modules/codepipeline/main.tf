@@ -3,8 +3,8 @@ module "ecs_push_pipeline" {
   version = "0.27.0"
   
   name                  = "ecs-codepipeline"
-  github_oauth_token    = "xxx"
-  github_webhooks_token = "xxx"
+  github_oauth_token    = "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"
+  github_webhooks_token = "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"
   repo_owner            = "mgomezzul"
   repo_name             = "timeoff-management-application"
   branch                = "master"
